@@ -34,26 +34,76 @@
 				(i.e. 24 publications in South Africa, 51 publications in India, 57 publications in the UK, and 54 publications
 				in the US).</p>
 		</section>
-  <div id="observablehq-viewof-svg-3e856917"></div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-  <script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
-  new Runtime().module(define, name => {
-  if (name === "viewof svg") return new Inspector(document.querySelector("#observablehq-viewof-svg-3e856917"));
+
+    <!-- Line chart -->
+    <div id="observablehq-viewof-svg-3e856917"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
+      new Runtime().module(define, name => {
+    if (name === "viewof svg") return new Inspector(document.querySelector("#observablehq-viewof-svg-3e856917"));
+    });
+   </script>
+
+   <!-- bump chart -->
+    <div id="observablehq-x-dccc87f4"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@783.js?v=4";
+    new Runtime().module(define, name => {
+    if (name === "x") return new Inspector(document.querySelector("#observablehq-x-dccc87f4"));
   });
   </script>
 
-  <div id="observablehq-x-dccc87f4"></div>
+  <!-- polarity chart -->
+  <div id="observablehq-c3-a2ad9c4c"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@792.js?v=4";
+    new Runtime().module(define, name => {
+    if (name === "c3") return new Inspector(document.querySelector("#observablehq-c3-a2ad9c4c"));
+  });
+  </script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@783.js?v=4";
-new Runtime().module(define, name => {
-  if (name === "x") return new Inspector(document.querySelector("#observablehq-x-dccc87f4"));
-});
-</script>
+  <!-- bubble chart 1 -->
+  <div id="observablehq-c4a-4b8007c4"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@792.js?v=4";
+  new Runtime().module(define, name => {
+    if (name === "c4a") return new Inspector(document.querySelector("#observablehq-c4a-4b8007c4"));
+  });
+  </script>
 
-		</div>
+  <!-- bubble chart 2 -->
+   <div id="observablehq-c4b-f983bdaa"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@792.js?v=4";
+  new Runtime().module(define, name => {
+    if (name === "c4b") return new Inspector(document.querySelector("#observablehq-c4b-f983bdaa"));
+  });
+  </script>
+
+  <!-- ridge chart -->
+  <svg style="height: 0; width: 0;">
+  <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f76e45"></stop><stop offset="90%" stop-color="#FEFAF1"></stop><stop offset="100%" stop-color="#FEFAF1"></stop></linearGradient>
+  </svg>
+
+  <div id="observablehq-c5-4b6a74de"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@792.js?v=4";
+  new Runtime().module(define, name => {
+    if (name === "c5") return new Inspector(document.querySelector("#observablehq-c5-4b6a74de"));
+  });
+  </script>
+
+	</div>
 </body>
