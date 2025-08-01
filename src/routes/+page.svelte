@@ -1,7 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1>Recreation</h1>
+
 <body>
-        <div class="titleArt">
+  <div class="titleArt">
 			<div class="titlewords">
 				<h1 id="typedtext" class="title"><span>When</span> <span>Women</span> <span>Make</span> <span>Headlines</span>
 				</h1>
@@ -35,6 +35,18 @@
 				in the US).</p>
 		</section>
 
+
+    <!-- bump chart -->
+    <div id="observablehq-x-dccc87f4"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@783.js?v=4";
+    new Runtime().module(define, name => {
+    if (name === "x") return new Inspector(document.querySelector("#observablehq-x-dccc87f4"));
+  });
+  </script>
+
     <!-- Line chart -->
     <div id="observablehq-viewof-svg-3e856917"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -45,17 +57,6 @@
     if (name === "viewof svg") return new Inspector(document.querySelector("#observablehq-viewof-svg-3e856917"));
     });
    </script>
-
-   <!-- bump chart -->
-    <div id="observablehq-x-dccc87f4"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@783.js?v=4";
-    new Runtime().module(define, name => {
-    if (name === "x") return new Inspector(document.querySelector("#observablehq-x-dccc87f4"));
-  });
-  </script>
 
   <!-- polarity chart -->
   <div id="observablehq-c3-a2ad9c4c"></div>
