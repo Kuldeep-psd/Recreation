@@ -44,10 +44,30 @@
       import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@783.js?v=4";
     new Runtime().module(define, name => {
     if (name === "x") return new Inspector(document.querySelector("#observablehq-x-dccc87f4"));
-  });
-  </script>
+    });
+    </script>
 
-    <!-- Line chart -->
+    <section class="barbell-section">
+			<div class="header">
+				<h2 class="sectionHeader">Headlines about women are more sensational</h2>
+			</div>
+			<div id="sortLollipop">
+				<p class="description"><span class="padded-dropcap">S</span>ensationalism is an editorial tactic. The words in a
+					sensational headline are carefully chosen for the purpose of enticing the reader. For example, a story titled
+					“<a href="https://news.sky.com/story/woman-28-charged-after-stabbing-in-barnsley-town-centre-11494085">Woman,
+						28, charged after 'stabbing' in Barnsley town centre</a>” could potentially garner a semi-conscious glance
+					from its reader while one titled “<a href="https://www.express.co.uk/news/uk/1014846/barnsley-stabbing-woman-market-trader-hero-south-yorkshire-uk-knives-police">Woman
+						screamed 'KILL KILL KILL!' while repeatedly stabbing a man in Barnsley market attack</a>” could be more
+					likely to capture the reader’s attention.</p>
+				<p class="description">But, is this sensationalism more or less prominent in women-focused headlines? To find
+					out, we used sentiment analysis, a natural language processing technique used to quantify emotion in text, to
+					rate every headline with a polarity score. A headline with either extremely positive or extremely negative
+					sentiment is, for our analysis, considered sensational, and hence it is given a higher polarity score. As it
+					turns out, not only is sensationalism on the rise, but it has also been consistently higher in headlines with
+					keywords associated with women, as opposed to headlines about other topics.</p>
+			</div>
+
+          <!-- Line chart -->
     <div id="observablehq-viewof-svg-3e856917"></div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
@@ -57,6 +77,14 @@
     if (name === "viewof svg") return new Inspector(document.querySelector("#observablehq-viewof-svg-3e856917"));
     });
    </script>
+			
+			<div id="sortLollipop">
+				<p class="description">How do different news outlets compare to each other? In the chart below, the absolute and
+					percent difference in polarity scores between headlines about women and all other headlines is displayed for a
+					representative sample of the news outlets analyzed.</p>
+			</div>
+
+
 
   <!-- polarity chart -->
   <div id="observablehq-c3-a2ad9c4c"></div>
@@ -69,6 +97,12 @@
   });
   </script>
 
+	<div class="header">
+		<h2 class="sectionHeader">Here’s how polarizing headlines are</h2>
+		<p class="description">Using data from SimilarWeb we then tied the monthly viewership of every publication to the average polarity score of their women-centered headlines. While all outlets sensationalize their news to some extent, news outlets on the left end of the spectrum (i.e. less sensational) tend to be the ones who focus on either financial news, like Bloomberg in the United States and LiveMint in India, or on tech news, such as TechRadar and CNET. 
+        Nature, a predominantly scientific publication, is the least sensational but it also has a more limited reach. BBC and The New York Times are the largest publications with the least sensational headlines compared to the Daily Mail, Huffington Post, Fox News or Aaj Tak who publish more shock value headlines.</p>
+  </div>
+
   <!-- bubble chart 1 -->
   <div id="observablehq-c4a-4b8007c4"></div>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -80,6 +114,17 @@
   });
   </script>
 
+  <div class="header">
+	<h2 class="sectionHeader">Here’s how biased headlines are</h2>
+	<p class="description">While the theme of crime and violence got us delving into how sensational women-centered headlines are, the theme of gendered language led to the idea of measuring bias.
+
+Explicit use of gendered language in English — words like “actress,” “congresswoman” or “landlady” — emphasizes the gender of the subject when there is no need to do so. Research from Yasmeen Hitti et al. has suggested that both gendered language and words that reinforce societal and behavioral stereotypes, such as “beautiful,” “emotional,” “supportive” or “dramatic,” add to the bias of a sentence. Using their research methodology, we attributed a bias score to each headline.
+
+For example, the headline that reads “Daughter in emotional meeting with woman given life back by selfless courage of her dead mother” gets a higher bias score than the headline that reads “Hillary Clinton speaks out for the same American values upheld in retracted embassy statement.” In the chart below, we visualize this bias index for each publication. In contrast to our results for polarity, there is a greater variance in bias scores across publications. The Daily Mail scores the highest while the BBC and ESPN are among those who score the lowest.
+
+Go ahead, hover on the bubbles and see for yourself if you think these headlines are extremely gendered.</p>
+  </div>
+
   <!-- bubble chart 2 -->
    <div id="observablehq-c4b-f983bdaa"></div>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -90,6 +135,17 @@
     if (name === "c4b") return new Inspector(document.querySelector("#observablehq-c4b-f983bdaa"));
   });
   </script>
+
+    <div class="header">
+	<h2 class="sectionHeader">Headline trends: Less gendered language. More empowering words.</h2>
+	<p class="description">In this final chart, we have visualized how the words used in headlines about women have changed over time.
+
+Among other trends that can be observed from this chart, we found that while the use of many gendered words (e.g.“sexy,” “fat,” “housewife” or “gossip”) has faded out over time, the use of empowering words has increased over time (e.g. “founder,” “activist,” “leader” or “appoint”). Other words (e.g. “death,” “hurt,” and “drama”) have instead stood the test of time, as their use has remained consistent since 2005.
+
+For each word’s ebb or flow, we tried to find a “remember when” memory to explain it. Remember when Caitlyn Jenner came out as transgender? That was part of a wave of increased trans visibility that helps to explain why “transgender” shot up in 2015. Remember when the #MeToo movement took off? That adds context to the sharp rise of “harassment” in 2017, and the sharp rise of the word “equality” in recent years. Such world events are arranged as bubbles in the timeline above the chart.
+
+If you see an interesting rise, hover over one such bubble to see if you can find a world event that can explain it. If you think that we’ve missed out on an important event in your part of the world, let us know.</p>
+  </div>
 
   <!-- ridge chart -->
   <svg style="height: 0; width: 0;">
@@ -105,6 +161,13 @@
     if (name === "c5") return new Inspector(document.querySelector("#observablehq-c5-4b6a74de"));
   });
   </script>
+
+  	<p class="description">
+
+The story of when women make headlines is, like most stories about people, full of contradictions. It is violent, sensational, biased, hopeful and empowering although not all of them in equal measure. This visual essay suggests that headlines used to report women-centered news can be biased and can reinforce existing stereotypes. These headlines also tend to be more sensational than for other news topics, and they tend to represent women in situations of crime and violence. As a growing body of research has already indicated, this could imply that women are not only underrepresented in the news but also mis-represented.
+
+Nonetheless, this visual essay also suggests that some progress has been made. Over time, we saw that the use of many empowering words has risen sharply while the use of some gender stereotypes has plummeted. Let’s hope this trend continues and, in the meantime, enjoy our news with a little grain of salt. After all, when women make headlines, no words, sensational or not, biased or not, can truly explain the nuance behind the event because words can only approximate.
+</p>
 
 	</div>
 </body>
