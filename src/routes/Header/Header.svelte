@@ -1,5 +1,5 @@
 <script>
-    import NewsTicker from "../NewsTicker.svelte";
+    import NewsTicker from "../Header/NewsTicker.svelte";
     const NewsItems = [
         "This is a recreation from the Pudding Article: When Women Make Headlines",
         "This is a recreation from the Pudding Article: When Women Make Headlines",
