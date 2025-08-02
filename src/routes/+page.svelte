@@ -1,6 +1,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Domine:wght@400..700&display=swap" rel="stylesheet">
 
 <h1>Recreation</h1>
 
@@ -12,6 +12,7 @@
         .chart {
         display: flex;
         justify-content: center;
+        padding: 25px;
       }
       .titleArt {
         text-align: center;
@@ -21,29 +22,28 @@
         font-family: "Barlow Condensed";
         font-size: 48px;
         font-style: italic;
-        font-variant: normal;
         font-weight: 900;
-        letter-spacing: normal;
         line-height: 38.4px;
         text-decoration: rgb(40, 40, 40);
-        text-align: center;
-        text-indent: 0px;
         text-transform: uppercase;
-        white-space: normal;
-        word-spacing: 0px;
-        
         color: rgb(40, 40, 40);
         height: 39.4px;
-        width: 1425px;
-        border-top: 0px rgb(40, 40, 40);	
-        border-right: 0px rgb(40, 40, 40);	
+        width: auto;
         border-bottom: 1px solid rgb(40, 40, 40);	
-        border-left: 0px rgb(40, 40, 40);	
-        margin: 96px auto 8px;	
-        padding: 0px 16px;	
-        
-        position: static;	
-        top: auto;	bottom: auto;	right: auto;	left: auto;	float: none;}
+        margin: auto;	
+        padding: auto;
+      }
+
+      .description {	
+        font-family: "Domine", serif;	
+        font-size: 18px;
+        font-weight: 10;
+        line-height: 29.7px;
+        text-align: justify;
+        padding: 16px;
+        max-width: 640px;
+        margin: 0 auto;
+      }
     </style>
 
 
