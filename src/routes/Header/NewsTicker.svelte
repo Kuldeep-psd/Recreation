@@ -6,14 +6,14 @@
 </script>
 
 <div class="ticker-container">
-        <div class="ticker-track">
-            {#each items as item}
-                <div class="ticker-item">{item}</div>
-            {/each}
-            {#each items as item}
-                <div class="ticker-item">{item}</div>
-            {/each}
-        </div>
+    <div class="ticker-track">
+        {#each items as item}
+            <div class="ticker-item">{item}</div>
+        {/each}
+        {#each items as item}
+            <div class="ticker-item">{item}</div>
+        {/each}
+    </div>
 </div>
 
 <style>
@@ -27,7 +27,7 @@
         position: absolute;
         -webkit-box-align: center;
         align-items: center;
-        width: 100%
+        width: 100%;
     }
 
     .ticker-track {
@@ -48,7 +48,7 @@
     .ticker-item {
         padding: 0 2rem;
         font-family: "Barlow Condensed", sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         font-style: italic;
         text-transform: uppercase;
         font-size: 22.5px;
@@ -58,7 +58,7 @@
     }
 
     .ticker-item:not(:last-child)::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         top: 50%;

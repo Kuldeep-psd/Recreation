@@ -4,7 +4,7 @@
             <h2 class="headline">WHEN</h2>
             <h2 class="headline">WOMEN</h2>
             <h2 class="headline">MAKE</h2>
-            <h2 class="headline">HEADLINES</h2>
+            <h2 class="headline2">HEADLINES</h2>
         </div>
     </div>
 
@@ -20,7 +20,7 @@
                     href="https://pudding.cool/author/leonardo-nicoletti/"
                     >LEONARDO NICOLETTI</a
                 >
-                and
+                <br />and
                 <a
                     class="author"
                     href="https://pudding.cool/author/sahiti-sarva/"
@@ -37,18 +37,22 @@
         background-color: #fdf8f0;
         border-bottom: 1px solid #282828;
         width: auto;
-        padding-top: 40px;
+        padding-top: 30px;
+        margin-bottom: 80px;
     }
 
     .headline-box {
-        width: 100%;
+        padding-top: 20px;
+        width: 70%;
     }
 
     .sidebar {
         border-left: 1px solid #282828;
-        padding-left: 50px;
-        margin: 0px;
+        margin-left: -9px;
         display: flex;
+        vertical-align: middle;
+        width: calc(30% - 3rem);
+        padding: 10rem 1.5rem;
     }
 
     .headline {
@@ -58,14 +62,28 @@
         color: #282828;
         width: auto;
         display: block;
-        font-size: 120px;
+        font-size: 130px;
         padding-top: 20px;
         line-height: 0.8;
-        margin-top: 1.5rem;
         font-weight: 900;
         border-bottom: 1px solid rgb(40, 40, 40);
         padding-left: 50px;
-        transform: matrix(1, 0, -0.176327, 1, 0, 0);
+        transform: matrix(1, 0, -0.14, 1, 0, 0);
+    }
+
+    .headline2 {
+        font-family: "Barlow Condensed";
+        text-transform: uppercase;
+        font-style: italic;
+        color: #282828;
+        width: auto;
+        display: block;
+        font-size: 130px;
+        padding-top: 22px;
+        line-height: 0.8;
+        font-weight: 900;
+        padding-left: 50px;
+        transform: matrix(1, 0, -0.14, 1, 0, 0);
     }
 
     .author {
@@ -73,6 +91,7 @@
         font-weight: 700;
         color: #282828;
         text-decoration: underline;
+        text-underline-offset: 3px;
     }
 
     .author:hover {
@@ -80,7 +99,7 @@
     }
 
     .contain {
-        padding: 50px;
+        display: block;
     }
 
     .subtitle {
@@ -89,11 +108,13 @@
         font-family: "Barlow Condensed";
         text-transform: uppercase;
         line-height: 1.4;
+        font-weight: 300;
     }
 
     .description {
+        margin-top: 20px;
         font-family: "Barlow Condensed";
-        font-size: 20px;
+        font-size: 16px;
         font-style: uppercase;
     }
 </style>
