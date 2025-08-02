@@ -1,5 +1,22 @@
 <h1>Recreation</h1>
 
+    <style>
+        :global(body) {
+            background-color: #fdf8f0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .chart {
+        display: flex;
+        justify-content: center;
+      }
+      .titleArt {
+        text-align: center;
+        margin: 20px;
+      }
+    </style>
+
+
+    <link rel="stylesheet" href="/src/routes/%2Bpage.svelte.css">
 <body>
   <div class="titleArt">
 			<div class="titlewords">
@@ -37,15 +54,17 @@
 
 
     <!-- bump chart -->
-    <div id="observablehq-x-dccc87f4"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
+    <div class="chart">
+      <div id="observablehq-c1-9f31247f"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <script type="module">
       import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@783.js?v=4";
-    new Runtime().module(define, name => {
-    if (name === "x") return new Inspector(document.querySelector("#observablehq-x-dccc87f4"));
-    });
-    </script>
+      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@945.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "c1") return new Inspector(document.querySelector("#observablehq-c1-9f31247f"));
+      });
+      </script>
+    </div>
 
     <section class="barbell-section">
 			<div class="header">
@@ -67,16 +86,18 @@
 					keywords associated with women, as opposed to headlines about other topics.</p>
 			</div>
 
-          <!-- Line chart -->
-    <div id="observablehq-viewof-svg-3e856917"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
-      new Runtime().module(define, name => {
-    if (name === "viewof svg") return new Inspector(document.querySelector("#observablehq-viewof-svg-3e856917"));
-    });
-   </script>
+      <!-- Line chart -->
+      <div class="chart">
+      <div id="observablehq-viewof-svg-3e856917"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
+        new Runtime().module(define, name => {
+      if (name === "viewof svg") return new Inspector(document.querySelector("#observablehq-viewof-svg-3e856917"));
+      });
+      </script>
+      </div>
 			
 			<div id="sortLollipop">
 				<p class="description">How do different news outlets compare to each other? In the chart below, the absolute and
@@ -86,16 +107,18 @@
 
 
 
-  <!-- polarity chart -->
-  <div id="observablehq-c3-a2ad9c4c"></div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-  <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@792.js?v=4";
-    new Runtime().module(define, name => {
-    if (name === "c3") return new Inspector(document.querySelector("#observablehq-c3-a2ad9c4c"));
-  });
-  </script>
+      <!-- polarity chart -->
+       <div class="chart">
+      <div id="observablehq-c3-2304ef6e"></div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@945.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "c3") return new Inspector(document.querySelector("#observablehq-c3-2304ef6e"));
+      });
+      </script></div>
+      </section>
 
 	<div class="header">
 		<h2 class="sectionHeader">Here’s how polarizing headlines are</h2>
@@ -104,6 +127,7 @@
   </div>
 
   <!-- bubble chart 1 -->
+   <div class="chart">
   <div id="observablehq-c4a-4b8007c4"></div>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   <script type="module">
@@ -113,6 +137,7 @@
     if (name === "c4a") return new Inspector(document.querySelector("#observablehq-c4a-4b8007c4"));
   });
   </script>
+  </div>
 
   <div class="header">
 	<h2 class="sectionHeader">Here’s how biased headlines are</h2>
@@ -126,6 +151,7 @@ Go ahead, hover on the bubbles and see for yourself if you think these headlines
   </div>
 
   <!-- bubble chart 2 -->
+   <div class="chart">
    <div id="observablehq-c4b-f983bdaa"></div>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   <script type="module">
@@ -135,6 +161,7 @@ Go ahead, hover on the bubbles and see for yourself if you think these headlines
     if (name === "c4b") return new Inspector(document.querySelector("#observablehq-c4b-f983bdaa"));
   });
   </script>
+   </div>
 
     <div class="header">
 	<h2 class="sectionHeader">Headline trends: Less gendered language. More empowering words.</h2>
@@ -148,6 +175,7 @@ If you see an interesting rise, hover over one such bubble to see if you can fin
   </div>
 
   <!-- ridge chart -->
+   <div class="chart">
   <svg style="height: 0; width: 0;">
   <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f76e45"></stop><stop offset="90%" stop-color="#FEFAF1"></stop><stop offset="100%" stop-color="#FEFAF1"></stop></linearGradient>
   </svg>
@@ -161,6 +189,7 @@ If you see an interesting rise, hover over one such bubble to see if you can fin
     if (name === "c5") return new Inspector(document.querySelector("#observablehq-c5-4b6a74de"));
   });
   </script>
+  </div>
 
   	<p class="description">
 
