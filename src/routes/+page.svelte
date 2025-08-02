@@ -1,3 +1,7 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 <h1>Recreation</h1>
 
     <style>
@@ -13,6 +17,33 @@
         text-align: center;
         margin: 20px;
       }
+      .sectionHeader {
+        font-family: "Barlow Condensed";
+        font-size: 48px;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: 900;
+        letter-spacing: normal;
+        line-height: 38.4px;
+        text-decoration: rgb(40, 40, 40);
+        text-align: center;
+        text-indent: 0px;
+        text-transform: uppercase;
+        white-space: normal;
+        word-spacing: 0px;
+        
+        color: rgb(40, 40, 40);
+        height: 39.4px;
+        width: 1425px;
+        border-top: 0px rgb(40, 40, 40);	
+        border-right: 0px rgb(40, 40, 40);	
+        border-bottom: 1px solid rgb(40, 40, 40);	
+        border-left: 0px rgb(40, 40, 40);	
+        margin: 96px auto 8px;	
+        padding: 0px 16px;	
+        
+        position: static;	
+        top: auto;	bottom: auto;	right: auto;	left: auto;	float: none;}
     </style>
 
 
@@ -197,6 +228,5 @@ The story of when women make headlines is, like most stories about people, full 
 
 Nonetheless, this visual essay also suggests that some progress has been made. Over time, we saw that the use of many empowering words has risen sharply while the use of some gender stereotypes has plummeted. Let’s hope this trend continues and, in the meantime, enjoy our news with a little grain of salt. After all, when women make headlines, no words, sensational or not, biased or not, can truly explain the nuance behind the event because words can only approximate.
 </p>
-
 	</div>
 </body>
