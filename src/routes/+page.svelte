@@ -2,7 +2,6 @@
   import Header from "./Header/Header.svelte";
   import Headline from "./Header/Headline.svelte";
   import Bump from "./Charts/Bump.svelte";
-  import Line from "./Charts/Line.svelte";
   import Polarity from "./Charts/Polarity.svelte";
   import Bubble1 from "./Charts/Bubble1.svelte";
   import Bubble2 from "./Charts/Bubble2.svelte";
@@ -99,7 +98,26 @@
   </div>
 
   <div class="chart">
-    <Line></Line>
+    <div id="observablehq-viewof-svg-1d30f86f"></div>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+/>
+
+<script type="module">
+  import {
+    Runtime,
+    Inspector,
+  } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
+  new Runtime().module(define, (name) => {
+    if (name === "viewof svg")
+      return new Inspector(
+        document.querySelector("#observablehq-viewof-svg-1d30f86f"),
+      );
+  });
+  
+</script>
   </div>
 
   <div>
@@ -247,7 +265,7 @@
   body {
     background-color: #fdf8f0;
     -webkit-font-smoothing: antialiased;
-    width: auto;
+    width: 99%;
     font-family: "Domine", serif;
   }
 
@@ -277,10 +295,11 @@
     text-transform: uppercase;
     color: #282828;
     height: 39.4px;
-    width: auto;
-    padding: 0px;
+    width: 100%;
     border-bottom: 1px solid rgb(40, 40, 40);
-    transform: matrix(1, 0, -0.176327, 1, 0, 0);
+    transform: skew(-10deg, 0);
+    margin: 6rem auto .5rem auto;
+    
   }
 
   .description {
