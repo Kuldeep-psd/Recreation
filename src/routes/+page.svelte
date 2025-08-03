@@ -288,13 +288,6 @@
     padding: 25px;
   }
   
-  chart,
-  svg {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
   .sectionHeader {
     font-family: "Barlow Condensed";
     font-size: 48px;

@@ -19,6 +19,11 @@
         });
     </script>
 <style>
-
+  chart, svg {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+ }
 </style>
 </div>
