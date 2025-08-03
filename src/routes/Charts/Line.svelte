@@ -1,4 +1,5 @@
 <!-- Line chart -->
+ <div>
 <div id="observablehq-viewof-svg-1d30f86f"></div>
 <link
   rel="stylesheet"
@@ -19,5 +20,6 @@
   });
   
 </script>
+</div>
 
 
