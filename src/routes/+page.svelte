@@ -2,7 +2,7 @@
   import Header from "./Header/Header.svelte";
   import Headline from "./Header/Headline.svelte";
   import Bump from "./Charts/Bump.svelte";
-  import Line from "./Charts/line.svelte";
+  import Line from "./Charts/Line.svelte";
   import Polarity from "./Charts/Polarity.svelte";
   import Bubble1 from "./Charts/Bubble1.svelte";
   import Bubble2 from "./Charts/Bubble2.svelte";
