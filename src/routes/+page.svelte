@@ -7,6 +7,7 @@
   import Bubble1 from "./Charts/Bubble1.svelte";
   import Bubble2 from "./Charts/Bubble2.svelte";
   import Ridge from "./Charts/Ridge.svelte";
+  import Stack from "./Charts/Stack.svelte";
 </script>
 
 <title>When Women Make Headlines</title>
@@ -68,6 +69,9 @@
   <div class="chart">
     <Bump></Bump>
   </div>
+  <div class="chart">
+    <Stack></Stack>
+  </div>
   <div>
     <h2 class="sectionHeader">Headlines about women are more sensational</h2>
   </div>
@@ -100,25 +104,24 @@
 
   <div class="chart">
     <div id="observablehq-viewof-svg-1d30f86f"></div>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
-/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+    />
 
-<script type="module">
-  import {
-    Runtime,
-    Inspector,
-  } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
-  new Runtime().module(define, (name) => {
-    if (name === "viewof svg")
-      return new Inspector(
-        document.querySelector("#observablehq-viewof-svg-1d30f86f"),
-      );
-  });
-  
-</script>
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/30a84ebdc808c7ff.js?v=4";
+      new Runtime().module(define, (name) => {
+        if (name === "viewof svg")
+          return new Inspector(
+            document.querySelector("#observablehq-viewof-svg-1d30f86f"),
+          );
+      });
+    </script>
   </div>
 
   <div>
@@ -284,7 +287,14 @@
     justify-content: center;
     padding: 25px;
   }
-
+  
+  chart,
+  svg {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
   .sectionHeader {
     font-family: "Barlow Condensed";
     font-size: 48px;
@@ -299,8 +309,7 @@
     width: 100%;
     border-bottom: 1px solid rgb(40, 40, 40);
     transform: skew(-10deg, 0);
-    margin: 6rem auto .5rem auto;
-    
+    margin: 6rem auto 0.5rem auto;
   }
 
   .description {
