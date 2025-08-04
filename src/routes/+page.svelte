@@ -1,9 +1,7 @@
 <script>
   import Header from "./Header/Header.svelte";
   import Headline from "./Header/Headline.svelte";
-  import Bump from "./Charts/Bump.svelte";
   import Line from "./Charts/Line.svelte";
-  import Polarity from "./Charts/Polarity.svelte";
   import Bubble1 from "./Charts/Bubble1.svelte";
   import Bubble2 from "./Charts/Bubble2.svelte";
   import Ridge from "./Charts/Ridge.svelte";
@@ -17,6 +15,28 @@
     <Header></Header>
     <Headline></Headline>
   </div>
+
+  <script type="module">
+    import {
+      Runtime,
+      Inspector,
+    } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/30a84ebdc808c7ff@1529.js?v=4";
+    const runtime = new Runtime();
+    const main = runtime.module(define, (name) => {
+      if (name === "c1")
+        return new Inspector(document.querySelector("#bump"));
+
+      if (name === "viewof sortOrder")
+        return new Inspector(document.querySelector("#sort"));
+
+      if (name === "chart")
+        return new Inspector(document.querySelector("#Polarity"));
+
+      return true;
+    });
+  </script>
+
   <p class="description">
     <span class="padded-dropcap">T</span>oday, research has suggested that women
     are significantly less likely to make the news compared to men. In the
@@ -66,9 +86,8 @@
     in the UK, and 54 publications in the US).
   </p>
 
-  <div class="chart">
-    <Bump></Bump>
-  </div>
+  <div id="bump" class="chart"></div>
+
   <div class="chart">
     <Stack></Stack>
   </div>
@@ -132,10 +151,8 @@
       sample of the news outlets analyzed.
     </p>
   </div>
-
-  <div class="chart">
-    <Polarity></Polarity>
-  </div>
+  <div id="sort" class="chart"></div>
+  <div id="Polarity" class="chart"></div>
 
   <p class="description">
     Outlets that sensationalize headlines about women less, like Nature and
@@ -287,7 +304,7 @@
     justify-content: center;
     padding: 25px;
   }
-  
+
   .sectionHeader {
     font-family: "Barlow Condensed";
     font-size: 48px;
